@@ -1,0 +1,89 @@
+.form{
+   margin: 10px;
+}
+.input{
+    margin-left: 2rem;
+}
+.ereur{
+    color:red;
+}
+.bouton{
+    width: 70px;
+    height: 30px;
+    background-color: skyblue;
+    border:1px solid skyblue;
+}
+.formulaire{
+    margin-bottom:-100rem;
+}
+table{
+    width: 100%;
+}
+.indice{
+    background-color: brown;
+}
+.valeur{
+    background-color: skyblue;
+}
+.titre{
+    background-color: tomato;
+}
+/* .table{
+    width:40%;
+    padding: 0px;
+} */
+.ligneEx1{
+    margin: 0px;
+    background-color: lightblue;
+}
+.lienEx1{
+    display: inline-block;
+    width:2rem;
+    border:1px solid rgb(20, 223, 30);
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(20, 223, 30); 
+    color: white; 
+    
+}
+ .lienEx1:hover{
+    cursor: pointer;
+    background-color: skyblue;
+}
+.tableEx1{
+    /* border:1px solid red; */
+    height: 20rem;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.superieur, .inferieur{
+    width: 100%;
+    /* border: 1px solid gray; */
+    height: 30rem;
+}
+/* .superieur{
+    margin-top: -31.5rem;
+    float: right;
+} */
+h4{
+    text-align: center;
+}
+.colonne1{
+    background-color: rgb(152, 155, 152);
+    height: 4rem;
+}
+.colonne2{
+    background-color: lightgray;
+    height: 4rem;
+}
+.tableEx2{
+    width: 70%;
+    margin: auto;
+    border:0px;
+}
+.ligneEx2{
+    height: 9rem;
+}
+.form{
+    margin-left: 10rem;
+}
