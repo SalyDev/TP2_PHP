@@ -1,0 +1,74 @@
+.conteneur{
+    width:60%;
+    height: 30rem;
+    margin:auto;
+    background-color: rgb(9, 139, 172);
+    border-radius: 10px;
+    color: white;
+}
+.matrice{
+    padding-top: 10px;
+    font-size: 17px;
+    margin-top: 10px;
+    color:white;
+    margin-left:4rem;
+}
+
+.input{
+    width:50%;
+    height: 4rem;
+    margin-left: 1.3rem;
+    border-radius: 5px;
+    border:1px solid skyblue;
+    font-size: 15px;
+}
+.inputEx3{
+    width:30%;
+    height: 2rem;
+    margin-left:9.5rem;
+}
+.nbre{
+    margin-left:-2px;
+}
+.select{
+    margin-left: 3.5rem;
+}
+.slct1{
+    margin-left: 4.5rem;
+}
+.submit, .reset{
+    width: 6rem;
+    height: 3rem;
+    border-radius: 5px;
+    color: white;
+}
+.submit, .reset:hover{
+    cursor: pointer;
+}
+.submit{
+    float: right;
+    margin-right: 10.5rem;
+    background-color: rgb(20, 223, 30);
+    border:rgb(20, 223, 30);
+}
+.btnEx3{
+    margin-right: 20rem;
+}
+.reset{
+    margin-left: 10.5rem;
+    background-color: darkgray;
+    border:darkgrey;
+}
+tr, td{
+    border:1px solid gray;
+}
+table{
+    margin: auto;
+}
+.ereur{
+    margin-left:15rem;
+    color: rgb(163, 0, 0);
+}
+.affich{
+    color:rgb(3, 44, 47);
+}
