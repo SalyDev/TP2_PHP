@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require "fonctions.php";
+    require "fonctions.php";//different du fichier myFonctions.php
     if(!empty($_POST['nbMot'])){
     $_SESSION['nbMot']=$_POST['nbMot'];
     }
