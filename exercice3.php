@@ -36,7 +36,7 @@
                             $_POST['mot'.$i]=null;
                                 $ereur[$i]="";
                             }
-                        if(mot($_POST['mot'.$i])=="faux"){
+                        if(mot($_POST['mot'.$i])=="faux" || laTaille($_POST['mot'.$i])>20){
                             $ereur[$i] = "*Mot invalide";
                         }
                         else{
