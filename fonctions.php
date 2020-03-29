@@ -46,25 +46,7 @@
         return $retour;
     }
 
-    function mot($chaine){
-        $retourFinal = "faux";
-        for($i=0;$i<laTaille($chaine);$i++){
-            if(testAlphabet($chaine[$i])=="vrai"){
-                $retour[$i]="vrai";
-            }
-            else{
-                $retour[$i]="faux";
-            }
-        }
-        $j=0;
-        while($j<laTaille($chaine) && $retour[$j]=="vrai"){
-            $j++;
-        }
-        if($j==laTaille($chaine)){
-            $retourFinal = "vrai";
-        }
-        return $retourFinal;
-    }
+
 
     // une fonction qui convertit et retourne un caractere en minuscule
     //ord retourne le code ASCII d;un caractere
@@ -169,7 +151,26 @@
         return $retour;
     }
     
-
+    //fonction qui teste si une chaine de caracteres est un mot
+        function mot($chaine){
+        $retourFinal = "faux";
+        for($i=0;$i<laTaille($chaine);$i++){
+            if(testAlphabet($chaine[$i])=="vrai"){
+                $retour[$i]="vrai";
+            }
+            else{
+                $retour[$i]="faux";
+            }
+        }
+        $j=0;
+        while($j<laTaille($chaine) && $retour[$j]=="vrai"){
+            $j++;
+        }
+        if($j==laTaille($chaine)){
+            $retourFinal = "vrai";
+        }
+        return $retourFinal;
+    }
 
     //fonction permettant de valider si un entier est positif
     function testEntier($valeur){
