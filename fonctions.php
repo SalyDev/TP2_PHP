@@ -195,6 +195,22 @@
             return $retourFinal;
        } 
 
+//fontion permettant de tester un entier
+function test_entier($valeur){
+    return ($valeur>0 || $valeur=="0");
+}
+
+//fonction qui supprime les espaces entres les caracters d'une chaine
+function my_trim($chaine){
+    $car="";
+    for($i=0;$i<laTaille($chaine);$i++){
+        if(testMinuscle2($chaine[$i]) || testMajuscule($chaine[$i]) || test_entier($chaine[$i])){
+            $car=$car.$chaine[$i];
+        }
+    }
+    return $car;
+}
+
 ?>
 <?php
 // echo mot("9yggd");
