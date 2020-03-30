@@ -36,6 +36,7 @@
                             $_POST['mot'.$i]=null;
                                 $ereur[$i]="";
                             }
+                        $_POST['mot'.$i]=my_trim($_POST['mot'.$i]);
                         if(mot($_POST['mot'.$i])=="faux" || laTaille($_POST['mot'.$i])>20){
                             $ereur[$i] = "*Mot invalide";
                         }
