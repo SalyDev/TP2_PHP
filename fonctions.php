@@ -210,6 +210,33 @@ function my_trim($chaine){
     }
     return $car;
 }
+    
+ 
+    //fonction pour decouper un texte en phrases
+    function splitPhrase($texte){
+        //le regex signifie tt ce qui commence par une lettre minuscule ou majuscule suivi
+        //de tt autre caractere different de . ? et ! ou de . suivi de chiffre 0 ou plusieurs fois
+        //termine par . ! ou ?
+        $tableau = [];
+        preg_match_all('#[A-Za-z]([^.!?]|[.][0-9])*[.!?]#',$texte,$texteCoup);
+        $lesPhrases = $texteCoup[0];
+        foreach($lesPhrases as $phrase){
+            $phrase=trim($phrase);
+            //les expessions qu'on doit remplacer
+            $regex=['#[ ]+#', '#[ ]?[\'][ ]?#', '#[ ]?[,]#', '#[ ]?[;][ ]?#', '#[(][ ]+#','#[ ]+[)]#',
+                    '#[ ]+[.]#', '#[ ][?]#', '#[ ][!]#'];
+            //leurs remplacants
+            $remplace=[' ', "'", ", ", "; ","(", ")", ".", "?", "!"];
+            for($j=0;$j<laTaille($regex);$j++){
+                $phrase = preg_replace($regex[$j],$remplace[$j],$phrase);
+            }
+            $phrase=ucfirst($phrase);
+            if(laTaille($phrase)<=200){
+                $tableau[]=$phrase;
+            } 
+    }
+    return $tableau;
+}
 
 ?>
 <?php
